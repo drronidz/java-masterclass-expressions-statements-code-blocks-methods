@@ -67,5 +67,38 @@ public class Main {
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
+
+        // Methods
     }
+
+    public static void calculateScore(){
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+
+    public static void calculateScoreProcedure(boolean gameOver, int score, int levelCompleted, int bonus){
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+
+    public static int calculateScoreFunction(boolean gameOver, int score, int levelCompleted, int bonus){
+        if(gameOver) {
+            int finalScore = score + (levelCompleted * bonus);
+            finalScore += 1000;
+            System.out.println("Your final score was " + finalScore);
+        }
+        return -1;
+    }
+
 }
